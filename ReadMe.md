@@ -1,4 +1,4 @@
-Viết một shell script tự động hoá việc:
+#Viết một shell script tự động hoá việc:
 1. Tải về database back up dạng tar file dùng curl
 2. Kiểm tra đã có container nào có tên theo yêu cầu và dùng image postgresql:latest
 3. Nếu chưa có thì tạo mới dùng docker run
@@ -8,7 +8,7 @@ Viết một shell script tự động hoá việc:
 7. Khôi phục dữ liệu sao lưu từ file tar vào cơ sở dữ liệu
 8. Thử truy vấn
 
-Đây là source code
+#Đây là source code
 ```shell
 #!/bin/sh
 postgres_password="123"
