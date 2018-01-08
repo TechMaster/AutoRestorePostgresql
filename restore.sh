@@ -8,7 +8,7 @@ postgres_image="postgres:latest"
 if [ ! -f $backupfile ]; then
     echo "Download from robconery github"
     curl -O https://raw.githubusercontent.com/robconery/dvdrental/master/dvdrental.tar
-    if [ ! -f dvdrental.tar ]; then
+    if [ ! -f $backupfile ]; then
     	echo "Failed to dowload $backupfile"
     	exit
     else
